@@ -4,4 +4,4 @@ bp = Blueprint("flasked",__name__)
 
 @bp.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World!</p>" 

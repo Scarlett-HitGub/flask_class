@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 def create_app() -> Flask:
     app = Flask(__name__)
 
-    from flasked import bp as flasked_bp
+    from routes import bp as flasked_bp
     app.register_blueprint(flasked_bp)
 
     return app
