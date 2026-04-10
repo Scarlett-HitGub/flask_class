@@ -1,16 +1,9 @@
 from flask.blueprints import Blueprint
+from flask import render_template
 # blueprint define un modulo
 bp = Blueprint("flasked",__name__)
 
 @bp.route("/")
-def hello_world():
+def index():
     user = {'username': 'eileen'}
-    return '''
-<html>
-    <head> 
-        <title>Microblog</title>
-    </head>
-    <body>
-        <h1>Hi, ''' + user['username'] + '''
-    </body>
-</html>
+    return render_template('index.html', title='Home', user=user)
