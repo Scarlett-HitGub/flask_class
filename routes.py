@@ -4,4 +4,13 @@ bp = Blueprint("flasked",__name__)
 
 @bp.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>" 
+    user = {'username': 'eileen'}
+    return '''
+<html>
+    <head> 
+        <title>Microblog</title>
+    </head>
+    <body>
+        <h1>Hi, ''' + user['username'] + '''
+    </body>
+</html>
