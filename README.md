@@ -9,3 +9,5 @@ uv add <programa(flask, python, etc)>
 uv run flask --app main.py run --debug
 
 pulleame
+
+https://mypikpak.com/drive/all/VOpnwg7jZrpGhX2zgat5gPp6o2
