@@ -3,12 +3,13 @@ from flask import render_template
 # blueprint define un modulo
 bp = Blueprint("flasked",__name__,template_folder="./templates")
 
-@bp.route("/")
+@bp.route('/')
+@bp.route('/index')
 def index():
     user = {'username': 'eileen'}
-    post = [
+    posts = [
         {
-            'author': {'username': 'Eileen'},
+            'author': {'username': 'Scarlett'},
             'body': 'Beautiful day in Punguiland!'
         }, 
         {
@@ -16,4 +17,4 @@ def index():
             'body': 'The Mario movie was freaking flip!'
         },
     ]
-    return render_template('index.html', user=user)
+    return render_template('index.html', title='Home', user=user, posts=posts)
