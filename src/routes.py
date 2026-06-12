@@ -3,7 +3,7 @@ from flask import render_template
 from src.forms import LoginForm
 
 # blueprint define un modulo
-bp = Blueprint("flasked", __name__, template_folder="./templates")
+bp = Blueprint("flasked", __name__, template_folder="../templates")
 
 
 @bp.route("/")

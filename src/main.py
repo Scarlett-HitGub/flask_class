@@ -1,6 +1,6 @@
 from flask import Flask
 from dotenv import load_dotenv
-
+load_dotenv()
 
 def create_app() -> Flask:
     app = Flask(__name__)
@@ -11,14 +11,6 @@ def create_app() -> Flask:
 
     return app
 
-def load_dotenv(
-    dotenv_path: StrPath | None = None,
-    stream: IO[str] | None = None,
-    verbose: bool = False,
-    override: bool = False,
-    interpolate: bool = True,
-    encoding: str | None = "utf-8"
-) -> bool
 
 if __name__ == "__main__":
     flask_app = create_app()
